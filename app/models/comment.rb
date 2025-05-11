@@ -18,6 +18,6 @@ class Comment < ApplicationRecord
   ## Direct associations
 
   # Comment#commenter: returns a row from the users table associated to this comment by the author_id column
-
+  belongs_to(:methodname, class_name:"", foreign_)
   # Comment#photo: returns a row from the photos table associated to this comment by the photo_id column
 end
